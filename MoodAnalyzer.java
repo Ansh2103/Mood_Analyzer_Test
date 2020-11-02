@@ -1,7 +1,17 @@
 public class MoodAnalyzer {
 
-    public String analyzeMood(String mood){
-        if (mood.contains("Sad")){
+    private String moodMessage;
+
+    public MoodAnalyzer() {
+
+    }
+
+    public MoodAnalyzer(String moodMessage){
+        this.moodMessage = moodMessage;
+    }
+
+    public String analyzeMood(){
+        if (moodMessage.contains("Sad")){
             return "SAD";
         }
         else{
